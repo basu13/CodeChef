@@ -75,10 +75,17 @@ void calc()
         }
         t++;
     }
+
     for(int i=t-1;i>=1;i--)
     {
         ans[i]=max(-dp[i-1],-ans[i+1]);
     }
+    /* for(int i=0;i<t;i++)
+        cout<<dp[i]<<" ";
+    cout<<"\n";
+     for(int i=0;i<t;i++)
+        cout<<ans[i]<<" ";
+    cout<<"\n";*/
     cout<<ans[1]<<"\n";
 
 }
